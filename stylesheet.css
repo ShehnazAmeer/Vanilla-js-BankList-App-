@@ -1,0 +1,189 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    background-color:rgb(252, 252, 252);
+}
+.header{
+    display:flex;
+    padding:20px 35px;
+    justify-content:space-between;
+    align-items:center;
+}
+.header img{
+    height:50px;
+    width:50px;
+}
+.header input{
+    font-size:0.8rem;
+    padding:5px;
+    margin-right:5px;
+    text-align:center;
+    width:120px;
+}
+.header button{
+    font-size:1.5rem;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+.hide{
+    display:none;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+main .sec1{
+    display:flex;
+    width:90%;
+    justify-content:space-between;
+    padding:10px 20px;
+}
+.main .loan-show{
+    font-size:0.7rem;
+}
+.main .btn-payloan{
+    background-image:linear-gradient(to top left, #39b385,#9be15d);
+    padding: 5px;
+    border:none;
+    border-radius:5px;
+    margin-top:5px;
+    color:#000;
+}
+main .sec2{
+    display:flex;
+    width:85%;
+    height:350px;
+    justify-content:space-around;
+}
+.sec2 .movements{
+    width:48%;
+    overflow:scroll;
+    font-size:0.7rem;
+}
+.sec .menus{
+    width:48%;
+}
+.movements .movements__row{
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#fff;
+    margin-bottom:4px;
+    border-radius:5px;
+}
+.movements__type{
+    padding:5px;
+    margin-left:10px;
+    border-radius:5px;
+    color:#fff;
+}
+.movements__type--deposit{
+    background-image:linear-gradient(to top left, #39b385,#9be15d);
+}
+.movements__type--withdraw{
+    background-image:linear-gradient(to top left,#e52a5a,#ff585f);
+}
+.movements__type--loanPaid{
+    background-image:linear-gradient(to top left,#394fb3,#2ab0e5);
+}
+.movements__type--loanTaken{
+    background-image:linear-gradient(to top left,#7239b3, #b02ae5);
+}
+.menus .menu{
+    height:105px;
+    padding:10px 20px;
+}
+.menu h6{
+    padding:10px 0px;
+}
+.menu button{
+    border:none;
+    border-radius:5px;
+    background:#fff;
+    width:50px;
+    padding:3px 15px;
+    cursor:pointer;
+}
+.menu input{
+    width:90px;
+    border:none;
+    border-radius:50px;
+    padding:3px;
+    text-align:center;
+    background-color:#ffffff63;
+}
+.menu input:hover{
+    background-color:#fff;
+}
+.transfer__money{
+    background-image:linear-gradient(to top left,#ffb003, #ffcb03);
+}
+.request__loan{
+    background-image:linear-gradient(to top left, #39b485,#9be15d);
+    margin:10px 0px;
+}
+.close__account{
+    background-image:linear-gradient(to top left, #e52a5a,#ff595f);
+}
+.menu .form{
+    display:grid;
+    gap:5px;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+}
+.btn-loan{
+    grid-column:span 2;
+}
+.menu label{
+    font-size:0.7rem;
+    padding:0px 10px;
+}
+main .sec3{
+    border:1px solid green;
+}
+.summary{
+    width:90%;
+    padding:10px 0px;
+    font-size:0.8rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.summary .detail{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:50%;
+}
+.detail button{
+    padding:5px;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+.detail-info{
+    display:flex;
+    justify-content:space-between;
+}
+.detail-info h4{
+    padding-right:10px;
+}
+.detail-info .in{
+    font-size:1.3rem;
+    color:#39b385;
+}
+.detail-info .out{
+    font-size:1.3rem;
+    color:#e52a5a;
+}
+.detail-info .interest{
+    font-size:1.3rem;
+    color:#39b385;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equv="X-UA-compatible" content="ie=edge">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <title>BankList App</title>
+</head>
+<body> 
+    <header class="header">
+        <h3 class="welcome">Login to Get Started!</h3>
+        <img src="../images/logo.png" alt="company logo"/>
+        <form>
+            <input type="text" class="username" placeholder="username" />
+            <input type="text" class="password" placeholder="PIN" />
+            <button type="submit" class="btn submit">&#8594</button>
+        </form>
+    </header>
+    <main class="main hide">
+        <section class="sec1">
+            <div class="current">
+                <h5>Current Balance</h5>
+                <p >As of <span class="date">25/12/2025</span></p>
+            </div>
+            <div class="show-loan">
+                <h5>Loan Taken: <span class="loan-show">0.00</span></h5>
+                <button type="button" class="btn-payloan">Click to Pay Loan</button>
+            </div>
+            <h2 class="balance__value">$49993</h2>
+        </section>
+
+        <section class="sec2">
+            <div class="movements">
+                <div class="movements__row">
+                    <div class="movements__type movements__type--deposit">1 deposit</div>
+                    <div class="movements__data">25/12/2025</div>
+                    <div class="movements__value">$3899</div>
+                </div>
+            </div>
+            <div class="menus">
+                <!-- Transfer Money -->
+                <div class="menu transfer__money">
+                    <h6>Transfer Money</h6>
+                    <form class="form">
+                        <input type="text" id="transfer-to"/>
+                        <input type="number" id="transfer-amount" />
+                        <button type="button" class="btn transfer">&#8594</button>
+                        <label name="transfer-to" for="transfer-to">Transfer to</label>
+                        <label name="transfer-amount" for="transfer-amount">Amount</label>
+                    </form>
+                </div>
+                <!-- Request Loan -->
+                <div class="menu request__loan">
+                    <h6>Request Loan</h6>
+                    <form class="form">
+                        <input type="number" id="request-loan"/>
+                        <button type="button" class="btn btn-loan">&#8594</button>
+                        <label for="request-loan">Amount</label>
+                    </form>
+                </div>
+                <!-- Close Account -->
+                <div class="menu close__account">
+                    <h6>Close Account</h6>
+                    <form class="form">
+                        <input type="text" id="confirm-user"/>
+                        <input type="text" id="confirm-pin"/>
+                        <button type="button" class="btn btn-close">&#8594</button>
+                        <label for="confirm-user">Confirm User</label>
+                        <label for="confirm-pin">Confirm PIN</label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="summary">
+            <div class="detail">
+                <div class="detail-info">
+                    <h4>In <span class="in">00.00</span></h4>
+                    <h4>Out <span class="out">00.00</span></h4>
+                    <h4>Interest <span class="interest">00.00</span></h4>
+                </div>
+                <button type="button" class="sort">&#8595 SORT</button>
+            </div>
+            <p>You will be logged out in <span class="timer">00:00</span></p>
+        </section>
+    </main>
+</body>
+</html>
